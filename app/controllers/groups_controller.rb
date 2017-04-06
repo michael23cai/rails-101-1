@@ -41,7 +41,7 @@ class GroupsController < ApplicationController
 
   def destroy
     @group.destroy
-    redirect_to groups_path, alert: "Group deleted"
+    redirect_to group_path, alert: "Group deleted"
   end
 
   def join
